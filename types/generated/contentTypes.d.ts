@@ -911,6 +911,39 @@ export interface ApiPostPost extends Schema.CollectionType {
   };
 }
 
+export interface ApiProcessFlowProcessFlow extends Schema.SingleType {
+  collectionName: 'process_flows';
+  info: {
+    singularName: 'process-flow';
+    pluralName: 'process-flows';
+    displayName: 'process_flow';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    process_cards: Attribute.Component<
+      'web-design-process-flow.web-design-card',
+      true
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::process-flow.process-flow',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::process-flow.process-flow',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -932,6 +965,7 @@ declare module '@strapi/types' {
       'api::booking.booking': ApiBookingBooking;
       'api::category.category': ApiCategoryCategory;
       'api::post.post': ApiPostPost;
+      'api::process-flow.process-flow': ApiProcessFlowProcessFlow;
     }
   }
 }

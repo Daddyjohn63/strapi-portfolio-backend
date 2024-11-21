@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "process_flows",
+  "info": {
+    "singularName": "process-flow",
+    "pluralName": "process-flows",
+    "displayName": "process_flow"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "process_cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "web-design-process-flow.web-design-card"
+    }
+  }
+}
