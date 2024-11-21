@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_web_design_process_flow_web_design_cards",
+  "info": {
+    "displayName": "web design card",
+    "icon": "chartCircle"
+  },
+  "options": {},
+  "attributes": {
+    "Time": {
+      "type": "string",
+      "required": true
+    },
+    "subheading": {
+      "type": "string",
+      "required": true
+    },
+    "mainheading": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "bullet_one": {
+      "type": "string",
+      "required": true
+    },
+    "bullet_two": {
+      "type": "string",
+      "required": true
+    },
+    "bullet_three": {
+      "type": "string"
+    }
+  }
+}
