@@ -4,7 +4,8 @@
   "info": {
     "singularName": "process-flow",
     "pluralName": "process-flows",
-    "displayName": "process_flow"
+    "displayName": "process_flow",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

@@ -5,15 +5,18 @@ export interface WebDesignProcessFlowWebDesignCard extends Schema.Component {
   info: {
     displayName: 'web design card';
     icon: 'chartCircle';
+    description: '';
   };
   attributes: {
-    Time: Attribute.String & Attribute.Required;
+    time: Attribute.String & Attribute.Required;
     subheading: Attribute.String & Attribute.Required;
     mainheading: Attribute.String & Attribute.Required;
     description: Attribute.Text & Attribute.Required;
     bullet_one: Attribute.String & Attribute.Required;
     bullet_two: Attribute.String & Attribute.Required;
     bullet_three: Attribute.String;
+    bullet_four: Attribute.String;
+    bullet_five: Attribute.String;
   };
 }
 

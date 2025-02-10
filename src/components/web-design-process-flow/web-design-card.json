@@ -2,11 +2,12 @@
   "collectionName": "components_web_design_process_flow_web_design_cards",
   "info": {
     "displayName": "web design card",
-    "icon": "chartCircle"
+    "icon": "chartCircle",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Time": {
+    "time": {
       "type": "string",
       "required": true
     },
@@ -31,6 +32,12 @@
       "required": true
     },
     "bullet_three": {
+      "type": "string"
+    },
+    "bullet_four": {
+      "type": "string"
+    },
+    "bullet_five": {
       "type": "string"
     }
   }
