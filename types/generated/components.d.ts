@@ -1,6 +1,7 @@
-import type { Attribute, Schema } from '@strapi/strapi';
+import type { Schema, Struct } from '@strapi/strapi';
 
-export interface WebDesignProcessFlowWebDesignCard extends Schema.Component {
+export interface WebDesignProcessFlowWebDesignCard
+  extends Struct.ComponentSchema {
   collectionName: 'components_web_design_process_flow_web_design_cards';
   info: {
     description: '';
@@ -8,21 +9,21 @@ export interface WebDesignProcessFlowWebDesignCard extends Schema.Component {
     icon: 'chartCircle';
   };
   attributes: {
-    bullet_five: Attribute.String;
-    bullet_four: Attribute.String;
-    bullet_one: Attribute.String & Attribute.Required;
-    bullet_three: Attribute.String;
-    bullet_two: Attribute.String & Attribute.Required;
-    description: Attribute.Text & Attribute.Required;
-    mainheading: Attribute.String & Attribute.Required;
-    subheading: Attribute.String & Attribute.Required;
-    time: Attribute.String & Attribute.Required;
+    bullet_five: Schema.Attribute.String;
+    bullet_four: Schema.Attribute.String;
+    bullet_one: Schema.Attribute.String & Schema.Attribute.Required;
+    bullet_three: Schema.Attribute.String;
+    bullet_two: Schema.Attribute.String & Schema.Attribute.Required;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    mainheading: Schema.Attribute.String & Schema.Attribute.Required;
+    subheading: Schema.Attribute.String & Schema.Attribute.Required;
+    time: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
-declare module '@strapi/types' {
-  export module Shared {
-    export interface Components {
+declare module '@strapi/strapi' {
+  export module Public {
+    export interface ComponentSchemas {
       'web-design-process-flow.web-design-card': WebDesignProcessFlowWebDesignCard;
     }
   }
