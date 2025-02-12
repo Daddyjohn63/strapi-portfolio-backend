@@ -11,7 +11,7 @@ module.exports = [
         process.env.NODE_ENV === "development"
           ? ["http://localhost:3000"]
           : [
-              "https://my-personal-website-mywebsite-nextjs.fbhmyq.easypanel.host/",
+              "https://my-personal-website-mywebsite-nextjs.fbhmyq.easypanel.host",
             ],
     },
   },
