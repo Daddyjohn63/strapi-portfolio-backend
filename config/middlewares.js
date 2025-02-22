@@ -10,9 +10,7 @@ module.exports = [
       origin:
         process.env.NODE_ENV === "development"
           ? ["http://localhost:3000"]
-          : [
-              "https://my-personal-website-mywebsite-nextjs.fbhmyq.easypanel.host",
-            ],
+          : ["https://webandprosper.co.uk", "https://www.webandprosper.co.uk"],
     },
   },
   "strapi::poweredBy",
